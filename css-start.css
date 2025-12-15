@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+    word-break: keep-all;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Apple SD Gothic Neo';
+}
+
+section img {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.top, .bottom {
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    font-weight: medium;
+    text-decoration: none;
+    padding: 5px 9px;
+    left: 50%; 
+    transform: translate(-50%);
+}
+
+.top {
+    top: 10px;
+}
+
+.bottom {
+    bottom: 10px;
+}
+
+.top:hover, .bottom:hover {
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 900px) {
+.top, .bottom {
+    font-size: 22px;
+    padding: 4px 7px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.top, .bottom {
+    font-size: 20px;
+    padding: 3px 5px;
+}
+}
+
+@media screen and (max-width: 700px) {
+.top, .bottom {
+    font-size: 18px;
+    padding: 2px 3px;
+}
+

@@ -1,0 +1,66 @@
+* {
+	padding: 0;
+	margin: 0;
+    word-break: keep-all;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    /*overflow: hidden;*/
+    font-family: 'Apple SD Gothic Neo';
+    background-color: black;
+}
+
+section img {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.r, .room3 {
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    font-weight: medium;
+    text-decoration: none;
+    padding: 5px 9px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.r:hover, .room3:hover {
+    color: white;
+    background-color: black;
+}
+
+.r {
+    left: 40%; 
+}
+
+.room3 {
+    left: 55%; 
+}
+
+@media screen and (max-width: 900px) {
+.r, .room3 {
+    font-size: 20px;
+    padding: 3px 5px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.r, .room3 {
+    font-size: 20px;
+    padding: 3px 5px;
+}
+}
+
+@media screen and (max-width: 700px) {
+.r, .room3 {
+    font-size: 18px;
+    padding: 2px 3px;
+}
+}

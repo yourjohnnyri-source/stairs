@@ -1,0 +1,108 @@
+* {
+	padding: 0;
+	margin: 0;
+    word-break: keep-all;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Apple SD Gothic Neo';
+}
+
+section img {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.source {
+    position: absolute;
+    font-size: 15px;
+    font-weight: medium;
+    color: white;
+    bottom: 10px;
+    left: 10px; 
+}
+
+.caption {
+    position: absolute;
+    font-size: 35px;
+    font-weight: medium;
+    color: white;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    width: max-content;
+}
+
+.top, .bottom {
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    font-weight: medium;
+    text-decoration: none;
+    padding: 5px 9px;
+    left: 50%; 
+    transform: translate(-50%);
+}
+
+.top {
+    top: 10px;
+}
+
+.bottom {
+    bottom: 10px;
+}
+
+.top:hover, .bottom:hover {
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 900px) {
+    .caption {
+    font-size: 30px;
+}
+
+.source {
+    font-size: 13px;
+}
+
+.top, .bottom {
+    font-size: 22px;
+    padding: 4px 7px;
+}
+}
+
+@media screen and (max-width: 800px) {
+    .caption {
+    font-size: 28px;
+}
+
+.top, .bottom {
+    font-size: 20px;
+    padding: 3px 5px;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .caption {
+    font-size: 26px;
+}
+
+.top, .bottom {
+    font-size: 18px;
+    padding: 2px 3px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .caption {
+    font-size: 23px;
+}
+}
+
